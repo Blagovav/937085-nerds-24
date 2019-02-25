@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-  	<header class="main-header">
+</head>
+<body>
+	<header class="main-header">
   		<nav class="main-navigation">
   			<a href="index.html" class="header-logo">
   				<img class="header-logo picture" src="">
@@ -75,7 +75,86 @@
   				</li>
   			</ul>
   		</section>
-  	</main>
-
-  </body>
+  		<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+  			<fieldset>
+  				<legend>СЕТКА:</legend>
+  				<ul class="filter-options">
+  					<li>
+  						<input type="radio" class="filter-options-radio" name="adaptive"  id="adaptive" value="Адаптивная" checked>
+  						<label for="adaptive">Адаптивная</label>
+  					</li>
+  					<li>
+  						<input type="radio" class="filter-options-radio" name="fixed"  id="fixed" value="Фиксированная">
+  						<label for="fixed">Фиксированная</label>
+  					</li>
+  					<li>
+  						<input type="radio" class="filter-options-radio" name="rubber" id="rubber" value="Резиновая">
+  						<label for="rubber">Резиновая</label>
+  					</li>
+  				</ul>
+  			</fieldset>
+  			<fieldset>
+  				<legend>ОСОБЕННОСТИ:</legend>
+  				<ul class="filter-options">
+  					<li>
+  						<input type="checkbox" class="filter-options-checkbox" name="slayder" id="slayder">
+  						<label for="slayder">Слайдер</label>
+  					</li>
+  					<li>
+  						<input type="checkbox" class="filter-options-checkbox" name="block" id="block">
+  						<label for="block">Блок преимуществ</label>
+  					</li>
+  					<li>
+  						<input type="checkbox" class="filter-options-checkbox" name="news" id="news">
+  						<label for="news">Новости</label>
+  					</li>
+  					<li>
+  						<input type="checkbox" class="filter-options-checkbox" name="galery" id="galery">
+  						<label for="galery">Галерея</label>
+  					</li>
+  					<li>
+  						<input type="checkbox" class="filter-options-checkbox" name="bascet-box" id="bascet-box">
+  					</li>
+  				</ul>
+  			</fieldset>
+  		</form>
+		<div class="paginator">
+			<a href="#1">1</a>
+			<a href="#2">2</a>
+			<a href="#3">3</a>
+			<a href="#next">Следующая</a>
+		</div>
+	</main>
+	<section class="map">
+	  			<img src="">
+	  			<div class="write-us">
+	  				<h3>NЁRDS DESIGN STUDIO</h3>
+	  				<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+	  				<a class="number-phone" href="tel:+78122757575">Тел:+78122757575</a>	
+	  			</div>
+	  		</section>
+	  	</main>
+	  	<footer class="main-footer">
+	  		<div class="footer-social">
+	        <ul>
+	          <li><a class="social-button" href="#">Вконтакте</a></li>
+	          <li><a class="social-button" href="#">Фейсбук</a></li>
+	          <li><a class="social-button" href="#">Инстаграм</a></li>
+	        </ul>
+	        <h3>Давайте дружить, это выгодно!</h3>
+	        <p>Скидка 10% для друзей из социальных сетей.</p>
+	      </div>
+	  	</footer>
+	  	<form class="about-us-form" method="post" action="https://echo.htmlacademy.ru">
+			<p>
+				<input id="user-name" type="text" name="name" placeholder="Ваше имя" ><label for="user-name">Ваше имя:</label>
+			</p>
+			<p>
+				<input id="user-mail" type="text" name="email" placeholder="Ваш e-mail:"><label for="user-mail">Ваш e-mail:</label>
+			</p>
+			<label for="write">Текст письма:</label>
+			<textarea id="write" placeholder="В свободной форме"></textarea>
+			<button class="write-us-button" type="submit">Отправить</button>
+		</form>
+	</body>
 </html>

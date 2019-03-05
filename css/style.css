@@ -17,6 +17,9 @@ a {
 .main-navigation{
 	background-color: #eeeeee;
 }
+.main-navigation-wrapper{
+  display: inline-flex;
+}
 .site-navigation a,
 .bascet a{
 	color:#000000;
@@ -251,20 +254,15 @@ a {
 	background-color: #eab534;
 }
 .about-us-header{
-  color: #000000;
+
   font-family: Roboto;
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
 }
-.list-header{
-  font-family: "Roboto - Bold";
+.list-header {
   font-weight: 700;
-}
-.about-us p{
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 24px;
+  text-transform: uppercase;
 }
 .table th{
 
@@ -295,15 +293,20 @@ a {
 /*end style main*/
 
 .social-list{
-    list-style: none;
+  list-style: none;
+  display: inline-flex;
 }
 .social{
-  display:inline-flex;
+  display: inline-block;
   width:79px;
   height:79px;
   background-color:#e1e1e1;
   margin-right:12px;
   border-radius:50%;
+}
+.social:hover,
+.social:focus{
+  background-color: #e74246;
 }
 .social-vk{
   background-image:url(../img/vk-icon.svg);
@@ -326,14 +329,6 @@ a {
 .number-phone{
   color:#000000;
 }
-/*style catalog*/
-.catalog-header{
-  text-align: center;
-}
-.catalog-list{
-  list-style: none;
-}
-
 .footer-header{
   font-family: Roboto;
   font-size: 36px;
@@ -346,6 +341,14 @@ a {
   font-weight: 400;
   line-height: 22px
 }
+/*style catalog*/
+.catalog-header{
+  text-align: center;
+}
+.catalog-list{
+  list-style: none;
+}
+
 .catalog-wrapper{
   display: flex;
 }
@@ -355,3 +358,47 @@ a {
 .shop {
   display:none;
 }
+/*стили для переключателя страниц*/
+.paginator {
+
+  white-space: nowrap;
+}
+
+.paginator a,
+.paginator span {
+  display: inline-block;
+  min-width: 40px;
+  height: 40px;
+  padding: 0 10px;
+
+  font-weight: 500;
+  line-height: 18px;
+  vertical-align: middle;
+  text-align: center;
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+.paginator .choose {
+  background-color: #ffffff;
+  border: 3px solid #dbdbdb;
+}
+.paginator a:hover,
+.paginator span:hover,
+.paginator a:focus,
+.paginator span:focus{
+  background-color: #dfdfdf;
+}
+/**/
+/*маркер карты*/
+.pin {
+  position: absolute;
+  top: 85px;
+  left: 725px;
+  width: 230px;
+  height: 190px;
+  background-image: url(../img/map-marker.png);
+  background-repeat: no-repeat;
+  font-size: 0;
+}
+/**/

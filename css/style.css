@@ -15,35 +15,49 @@ a {
 }
 /*стили для шапки*/
 .main-navigation{
-	background-color: #eeeeee;
-}
-.main-navigation-wrapper{
-  display: inline-flex;
+  display:flex;
+  align-items: center;
 }
 .site-navigation a,
-.bascet a{
+.basket a{
+  display: inline-block;
+  vertical-align: top;
 	color:#000000;
 }
-.site-navigation,
-.bascet{
+.site-navigation{
   display: flex;
+  flex-wrap:wrap;
+  padding:0px;
+  width: 640px;
+  justify-content: center;
 	list-style: none;
 	font-size: 16px;
 	line-height: 30px;
 	font-weight: 500;
   text-transform: uppercase;
 }
-.site-navigation li,
-.bascet li{
-  margin-left: 30px;
+.site-navigation li:not(:last-child){
+  margin-right: 30px;
 }
-.bascet{
-  display:flex;
+.basket{
+  padding: 0;
+  padding-left:45px;
+  margin-left: auto;
+  list-style: none;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.header-logo{
+  display:inline-block;
+  margin-right: 100px;
+
 }
 .site-navigation a:hover,
 .site-navigation a:focus,
-.bascet a:hover,
-.bascet a focus{
+.basket a:hover,
+.basket a:focus{
 	color:#fb565a;
 }
 /* end стили для шапки*/
@@ -189,9 +203,9 @@ a {
 }
 
 .button {
-  display: block;
+  display:inline-block;
   width: 240px;
-  padding: 13px 0;
+  padding: 13px 10px;
   
   font-size: 16px;
   line-height: 18px;
@@ -222,39 +236,111 @@ a {
 }
 .products-list{
   display:flex;
+  justify-content: space-between;
 	list-style:none;
 	margin:0;
 	padding: 0;
 }
 .products-list h2{
+  margin-top:0px;
+  margin-bottom: 0px;
 	font-size:24px;
 	line-height: 30px;
 	font-weight: 700;
 }
 .products-list p{
+  margin-top:27px;
 	font-size:16px;
 	line-height: 24px;
 	font-weight: 400;
 }
 .products-item img{
   display:block;
+  margin-bottom: 30px;
 }
-.button-pri{
+.item-red{
+  width: 300px;
+}
+.item-green{
+  width: 300px;
+}
+.item-yellow{
+  width:300px;
+}
+.button-red{
+  width: 140px;
+}
+.button-green{
+  width: 140px;
 	background-color: #00ca74;
 }
-.button-pri:hover,
-.button-pri:focus{
+.button-green:hover,
+.button-green:focus{
 	background-color: #00bc6c;
 }
-.button-prez{
+.button-yellow{
+  width: 140px;
 	background-color: #efc84a;
 }
-.button-prez:hover,
-.button-prez:focus{
+.button-yellow:hover,
+.button-yellow:focus{
 	background-color: #eab534;
 }
-.about-us-header{
+.companies-image{
+  list-style: none;
+}
+.htmlacademy {
+  background-image: url(../img/logo-html.svg);
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  font-size: 0;
+}
+.htmlacademy a:hover,
+.htmlacademy a:focus{
+  opacity: 1;
+}
+.barber{
+  background-image: url(../img/Logo-barber.svg);
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  font-size: 0;
+}
+.pink{
+  background-image: url(../img/logo-pink.svg);
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  font-size: 0;
+}
+.mishka{
+  background-image: url(../img/logo-mishka.svg);
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  font-size: 0;
+}
+.companies-image{
+  display: inline-flex;
+  flex-wrap: nowrap;
+  margin-right: 100px;
+  width: 199px;
+  height: 68px;
+}
 
+.about-us-columns{
+  display: flex;
+  justify-content: space-between;
+  margin-top:166px;
+}
+.about-us{
+  width:650px;
+}
+.about-us-table{
+  width:360px;
+}
+.about-us-table img{
+  margin-bottom: 40px;
+}
+.about-us-header{
+  margin:0;
   font-family: Roboto;
   font-size: 45px;
   font-weight: 500;
@@ -264,8 +350,16 @@ a {
   font-weight: 700;
   text-transform: uppercase;
 }
+.about-us-table p{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin:0;
+  margin-bottom: 50px;
+}
 .table th{
-
 	font-size: 45px;
 	font-weight: 700;
 	line-height: 10px;
@@ -277,6 +371,11 @@ a {
   font-weight: 400;
   line-height: 18px;
 }
+
+
+
+
+
 .map-wrapper{
   position: relative;
   overflow: hidden;
@@ -291,10 +390,15 @@ a {
   transform: translateY(-50%);
 }
 /*end style main*/
-
+.main-footer-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .social-list{
   list-style: none;
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
 }
 .social{
   display: inline-block;
@@ -303,6 +407,8 @@ a {
   background-color:#e1e1e1;
   margin-right:12px;
   border-radius:50%;
+}
+.footer-text{
 }
 .social:hover,
 .social:focus{
@@ -323,6 +429,9 @@ a {
   background-repeat: no-repeat;
   background-position: center;  
 }
+
+
+
 .about-us-form{
   display: none;
 }
@@ -334,12 +443,14 @@ a {
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
+  margin:0;
 }
 .footer-message{
   font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
-  line-height: 22px
+  line-height: 22px;
+  margin:0;
 }
 /*style catalog*/
 .catalog-header{

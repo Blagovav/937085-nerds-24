@@ -54,6 +54,10 @@ a {
   margin-right: 100px;
 
 }
+.header-logo a:hover,
+.header-logo a:focus{
+ opacity: 0.2;
+}
 .site-navigation a:hover,
 .site-navigation a:focus,
 .basket a:hover,
@@ -286,8 +290,15 @@ a {
 .button-yellow:focus{
 	background-color: #eab534;
 }
+.companies {
+}
 .companies-image{
   list-style: none;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  margin-right: 100px;
+  width: 199px;
+  height: 68px;
 }
 .htmlacademy {
   background-image: url(../img/logo-html.svg);
@@ -303,28 +314,27 @@ a {
   background-image: url(../img/Logo-barber.svg);
   background-repeat: no-repeat;
   opacity: 0.2;
-  font-size: 0;
 }
 .pink{
   background-image: url(../img/logo-pink.svg);
   background-repeat: no-repeat;
   opacity: 0.2;
-  font-size: 0;
 }
 .mishka{
   background-image: url(../img/logo-mishka.svg);
   background-repeat: no-repeat;
   opacity: 0.2;
-  font-size: 0;
-}
-.companies-image{
-  display: inline-flex;
-  flex-wrap: nowrap;
-  margin-right: 100px;
-  width: 199px;
-  height: 68px;
 }
 
+.write-us{
+  position: relative;
+  z-index:1;
+  top:300px;
+  left:140px;
+  width: 320px;
+  height: auto;
+  background-color: #ffffff;
+}
 .about-us-columns{
   display: flex;
   justify-content: space-between;
@@ -512,4 +522,111 @@ a {
   background-repeat: no-repeat;
   font-size: 0;
 }
+/**/
+/*стили фильтра*/
+.filter-item {
+  margin: 0;
+  padding: 0;
+  
+  border: none;
+  
+  /* Для демонстрации */
+  width: 260px;
+  margin: 50px auto; 
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+  
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  
+  background-color: #f1f1f1;
+  
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+  
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+  
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
+}
+
 /**/

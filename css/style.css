@@ -9,7 +9,6 @@ body {
   font-weight: 400;
   color: #000000;
 }
-
 a {
   text-decoration: none;
 }
@@ -29,7 +28,6 @@ a {
   flex-wrap:wrap;
   padding:0px;
   width: 640px;
-  justify-content: center;
 	list-style: none;
 	font-size: 16px;
 	line-height: 30px;
@@ -39,7 +37,9 @@ a {
 .site-navigation li:not(:last-child){
   margin-right: 30px;
 }
+
 .basket{
+  position: relative;
   padding: 0;
   padding-left:45px;
   margin-left: auto;
@@ -49,11 +49,24 @@ a {
   font-weight: 500;
   text-transform: uppercase;
 }
+.basket::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 17px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .header-logo{
   display:inline-block;
   margin-right: 100px;
 
 }
+
 .header-logo a:hover,
 .header-logo a:focus{
  opacity: 0.2;
@@ -290,50 +303,47 @@ a {
 .button-yellow:focus{
 	background-color: #eab534;
 }
-.companies {
-}
+
 .companies-image{
   list-style: none;
-  display: inline-flex;
-  flex-wrap: nowrap;
-  margin-right: 100px;
-  width: 199px;
-  height: 68px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.companies-item {
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  font-size:0;
 }
 .htmlacademy {
   background-image: url(../img/logo-html.svg);
-  background-repeat: no-repeat;
-  opacity: 0.2;
-  font-size: 0;
-}
-.htmlacademy a:hover,
-.htmlacademy a:focus{
-  opacity: 1;
 }
 .barber{
   background-image: url(../img/Logo-barber.svg);
-  background-repeat: no-repeat;
-  opacity: 0.2;
 }
 .pink{
   background-image: url(../img/logo-pink.svg);
-  background-repeat: no-repeat;
-  opacity: 0.2;
 }
 .mishka{
   background-image: url(../img/logo-mishka.svg);
-  background-repeat: no-repeat;
-  opacity: 0.2;
 }
-
+.companies-image a:hover,
+.companies-image a:focus{
+  opacity: 1;
+}
 .write-us{
-  position: relative;
-  z-index:1;
-  top:300px;
+  position:absolute;
+  top:50%;
   left:140px;
-  width: 320px;
+  width: 100%;
   height: auto;
+  transform: translateY(-50%);
+  width:320px;
   background-color: #ffffff;
+  text-align: center;
 }
 .about-us-columns{
   display: flex;
@@ -381,11 +391,6 @@ a {
   font-weight: 400;
   line-height: 18px;
 }
-
-
-
-
-
 .map-wrapper{
   position: relative;
   overflow: hidden;
@@ -402,7 +407,6 @@ a {
 /*end style main*/
 .main-footer-wrapper{
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .social-list{
@@ -419,6 +423,7 @@ a {
   border-radius:50%;
 }
 .footer-text{
+  margin-left:140px;
 }
 .social:hover,
 .social:focus{
@@ -439,9 +444,6 @@ a {
   background-repeat: no-repeat;
   background-position: center;  
 }
-
-
-
 .about-us-form{
   display: none;
 }
@@ -467,17 +469,28 @@ a {
   text-align: center;
 }
 .catalog-list{
+  display: flex;
+  flex-wrap: wrap;
+  width: 765px;
+  justify-content: space-between;
   list-style: none;
 }
 
 .catalog-wrapper{
   display: flex;
+  justify-content: space-between;
+}
+.catalog{
+  order: 2;
 }
 .catalog-items:hover .shop{
   display:block;
 }
 .shop {
   display:none;
+}
+.shop .sedona-text{
+
 }
 /*стили для переключателя страниц*/
 .paginator {
@@ -511,7 +524,7 @@ a {
   background-color: #dfdfdf;
 }
 /**/
-/*маркер карты*/
+/*маркер карты*
 .pin {
   position: absolute;
   top: 85px;
@@ -529,8 +542,6 @@ a {
   padding: 0;
   
   border: none;
-  
-  /* Для демонстрации */
   width: 260px;
   margin: 50px auto; 
 }
@@ -630,3 +641,54 @@ a {
 }
 
 /**/
+/*стили товаров каталога*/
+.tovar{
+}
+.sedona-image{
+  position:relative;
+}
+.sedona-text{
+  position: absolute;
+  top: 50%;
+  background-color: #ffffff;
+  width: 360px;
+}
+.plus-image{
+  position:relative;
+}
+.plus-text{
+    position: absolute;
+  top: 50%;
+  background-color: #ffffff;
+  width: 360px;
+}
+
+.kvast-image{
+  position:relative;
+}
+.kvast-text{
+    position: absolute;
+  top: 50%;
+  background-color: #ffffff;
+  width: 360px;
+}
+
+.plus-image{
+  position:relative;
+}
+.plus-text{
+    position: absolute;
+  top: 50%;
+  background-color: #ffffff;
+  width: 360px;
+}
+
+.plus-image{
+  position:relative;
+}
+.plus-text{
+    position: absolute;
+  top: 50%;
+  background-color: #ffffff;
+  width: 360px;
+}

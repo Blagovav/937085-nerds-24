@@ -66,7 +66,13 @@ a {
   margin-right: 100px;
 
 }
-
+.catalog-header{
+  font-family: Roboto;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  padding-bottom: 116px;
+}
 .header-logo a:hover,
 .header-logo a:focus{
  opacity: 0.2;
@@ -337,7 +343,7 @@ a {
 .write-us{
   position:absolute;
   top:50%;
-  left:140px;
+  left:4%;
   width: 100%;
   height: auto;
   transform: translateY(-50%);
@@ -488,12 +494,62 @@ a {
 }
 .shop {
   display:none;
+  bottom: 0;
+  left:0;
+}
+.catalog-items a{
+  margin-bottom: 80px;
+
+}
+.catalog-items p{
+  max-height: 50%;
+  overflow-y: scroll;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
 }
 .catalog-items article{
   position: relative;
   width: 360px;
+  text-align: center;
+  padding-top: 33px;
 }
-.shop .sedona-text{
+.sedona-text{
+  position: absolute;
+  background-color: #eeeeee;
+  width: 360px;
+
+}
+.plus-text{
+  position: absolute;
+  background-color: #eeeeee;
+  width: 360px;
+
+}
+.kvast-text{
+  position: absolute;
+  background-color: #eeeeee;
+  width: 360px;
+
+}
+
+.barber-text{
+  position: absolute;
+  background-color: #eeeeee;
+  width: 360px;
+
+}
+.mishka-text{
+  position: absolute;
+  background-color: #eeeeee;
+  width: 360px;
+
+}
+.pink-text{
+  position: absolute;
+  background-color: #eeeeee;
+  width: 360px;
 
 }
 /*стили для переключателя страниц*/
@@ -549,8 +605,6 @@ a {
   margin-bottom: 19px;
   padding-left: 45px;
 }
-
-
 .button-filter{
   background-color: #eeeeee;
   width:260px;
@@ -674,42 +728,3 @@ a {
 
 /**/
 /*стили товаров каталога*/
-
-.sedona-text{
-  position: absolute;
-  top:100%;
-  background-color: #ffffff;
-  width: 360px;
-}
-.plus-text{
-  position: absolute;
-  top: 50%;
-  background-color: #ffffff;
-  width: 360px;
-}
-.kvast-text{
-  position: absolute;
-  top: 50%;
-  background-color: #ffffff;
-  width: 360px;
-}
-
-.barber-text{
-    position: absolute;
-  top: 50%;
-  background-color: #ffffff;
-  width: 360px;
-}
-.mishka-text{
-  position: absolute;
-  top: 50%;
-  background-color: #ffffff;
-  width: 360px;
-}
-.pink-text{
-  position: absolute;
-  top: 50%;
-  background-color: #ffffff;
-  width: 360px;
-
-}

@@ -489,6 +489,10 @@ a {
 .shop {
   display:none;
 }
+.catalog-items article{
+  position: relative;
+  width: 360px;
+}
 .shop .sedona-text{
 
 }
@@ -522,6 +526,34 @@ a {
 .paginator a:focus,
 .paginator span:focus{
   background-color: #dfdfdf;
+}
+.filter-wrapper legend{
+  margin-bottom: 26px;
+}
+.filter-wrapper fieldset{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.filter-wrapper fieldset:first-child {
+  margin-bottom: 35px;
+}
+.filter-wrapper ul {
+  padding: 0;
+  margin: 0;
+  
+  list-style: none;
+  line-height: 18px;
+}
+.filter-option {
+  margin-bottom: 19px;
+  padding-left: 45px;
+}
+
+
+.button-filter{
+  background-color: #eeeeee;
+  width:260px;
 }
 /**/
 /*маркер карты*
@@ -642,53 +674,42 @@ a {
 
 /**/
 /*стили товаров каталога*/
-.tovar{
-}
-.sedona-image{
-  position:relative;
-}
+
 .sedona-text{
+  position: absolute;
+  top:100%;
+  background-color: #ffffff;
+  width: 360px;
+}
+.plus-text{
   position: absolute;
   top: 50%;
   background-color: #ffffff;
   width: 360px;
 }
-.plus-image{
-  position:relative;
-}
-.plus-text{
-    position: absolute;
-  top: 50%;
-  background-color: #ffffff;
-  width: 360px;
-}
-
-.kvast-image{
-  position:relative;
-}
 .kvast-text{
-    position: absolute;
+  position: absolute;
   top: 50%;
   background-color: #ffffff;
   width: 360px;
 }
 
-.plus-image{
-  position:relative;
-}
-.plus-text{
+.barber-text{
     position: absolute;
   top: 50%;
   background-color: #ffffff;
   width: 360px;
 }
+.mishka-text{
+  position: absolute;
+  top: 50%;
+  background-color: #ffffff;
+  width: 360px;
+}
+.pink-text{
+  position: absolute;
+  top: 50%;
+  background-color: #ffffff;
+  width: 360px;
 
-.plus-image{
-  position:relative;
-}
-.plus-text{
-    position: absolute;
-  top: 50%;
-  background-color: #ffffff;
-  width: 360px;
 }

@@ -144,16 +144,16 @@
 	  	<footer class="main-footer ">
 	  		<div class="map-wrapper">
 	  			<img class="map-image" src="img/map.png" alt="Карта проезда" width="1440" height="416">
-	  			<section class="map">
+	  			<section class="map container">
 	  				<div class="write-us">
 	  					<h3>NЁRDS DESIGN STUDIO</h3>
 	  					<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 	  					<a class="number-phone" href="tel:+78122757575">Тел:+78122757575</a>
-	  					<a href="#" class="button">Напишите нам</a>	
+	  					<button class="button link-button" type="submit">Напишите нам</button>
 	  				</div>
 				</section>
 	  		</div>
-	  		<div class="main-footer-wrapper">
+	  		<div class="main-footer-wrapper container">
 				<ul class="social-list">
 	       			<li>
 	       				<a class="social social-vk" href="#"></a>
@@ -184,5 +184,22 @@
 				<textarea id="write" placeholder="В свободной форме"></textarea>
 				<button class="button write-us-button" type="submit">Отправить</button>
 			</form>
+		</section>
+		<script>
+  var link = document.querySelector(".link-button");
+  
+  var popup = document.querySelector(".modal-write-us");
+  var close = popup.querySelector(".modal-close");
+  
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("modal-show");
+  });
+  
+  close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+  });
+		</script>
 	</body>
 </html>

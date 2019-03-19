@@ -64,7 +64,10 @@ a {
 .header-logo{
   display:inline-block;
   margin-right: 100px;
-
+}
+.header-logo a:hover,
+.header-logo a:focus{
+  opacity: 0.8;
 }
 .catalog-header{
   font-family: Roboto;
@@ -86,9 +89,11 @@ a {
 /* end стили для шапки*/
 /*Стили для слайдера*/
 .container {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  height: 100%;
   box-sizing: border-box;
 }
 
@@ -323,12 +328,13 @@ a {
   width: 200px;
   height: 100px;
   font-size:0;
+  background-position: 50%;
 }
 .htmlacademy {
   background-image: url(../img/logo-html.svg);
 }
 .barber{
-  background-image: url(../img/Logo-barber.svg);
+  background-image: url(../img/logo-barber.svg);
 }
 .pink{
   background-image: url(../img/logo-pink.svg);
@@ -486,7 +492,7 @@ a {
 .catalog{
   order: 2;
 }
-.catalog-items:hover .shop{
+.catalog-items article:hover .shop{
   display:block;
 }
 .shop {
@@ -510,8 +516,24 @@ a {
   position: relative;
   width: 360px;
   text-align: center;
-  padding-top: 33px;
+  margin-bottom: 30px;
 }
+.catalog-items article::before{
+  content: "";
+  position: absolute;
+  bottom: 6%;
+  left: 0;
+  width: 100%;
+  height:100%;
+  background-image: url("../img/browser.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.12;
+}
+.catalog-items article:hover .catalog-items article::before,{
+  opacity: 1;
+}
+
 .sedona-text{
   position: absolute;
   background-color: #eeeeee;
@@ -726,13 +748,20 @@ a {
 /**/
 /*стили товаров каталога*/
 /*стили формы*/
+.about-us-form{
+}
 .modal{
+  display: none;
   width: 960px;
   height: 590px;
   background-color:#ffffff;
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
-  top:1700px;
-  left:240px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-show {
+  display: block;
 }
 .modal-write-us{
   position: fixed;

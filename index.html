@@ -171,16 +171,18 @@
 	       		</div>
 	       	</div>
 	  	</footer>
-	  	<form class="about-us-form" method="post" action="https://echo.htmlacademy.ru">
-			<p>
-				<input id="user-name" type="text" name="name" placeholder="Ваше имя" ><label for="user-name">Ваше имя:</label>
-			</p>
-			<p>
-				<input id="user-mail" type="text" name="email" placeholder="Ваш e-mail:"><label for="user-mail">Ваш e-mail:</label>
-			</p>
-			<label for="write">Текст письма:</label>
-			<textarea id="write" placeholder="В свободной форме"></textarea>
-			<button class="write-us-button" type="submit">Отправить</button>
-		</form>
+	  	<section class="modal modal-write-us">
+	  		<form class="about-us-form" method="post" action="https://echo.htmlacademy.ru">
+	  			<button class="modal-close" type="button">Закрыть</button>
+	  			<p class="form-header">Напишите нам</p>
+					<input id="user-name" type="text" name="name" placeholder="Ваше имя" ><label for="user-name">Ваше имя:</label>
+				</p>
+				<p>
+					<input id="user-mail" type="text" name="email" placeholder="Ваш e-mail:"><label for="user-mail">Ваш e-mail:</label>
+				</p>
+				<label for="write">Текст письма:</label>
+				<textarea id="write" placeholder="В свободной форме"></textarea>
+				<button class="button write-us-button" type="submit">Отправить</button>
+			</form>
 	</body>
 </html>

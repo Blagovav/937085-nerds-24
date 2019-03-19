@@ -450,9 +450,6 @@ a {
   background-repeat: no-repeat;
   background-position: center;  
 }
-.about-us-form{
-  display: none;
-}
 .number-phone{
   color:#000000;
 }
@@ -728,3 +725,33 @@ a {
 
 /**/
 /*стили товаров каталога*/
+/*стили формы*/
+.modal{
+  width: 960px;
+  height: 590px;
+  background-color:#ffffff;
+  box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+  top:1700px;
+  left:240px;
+}
+.modal-write-us{
+  position: fixed;
+}
+.write-us-buttom{
+  width: 260px;
+  height: 50px;
+}
+.about-us-form{}
+.form-header{
+  font-family: Roboto;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+.about-us-form label{
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+}
+/**/

@@ -92,7 +92,7 @@
 	  			<div class="about-us-columns">
 	  				<section class="about-us">
 		  				<p class="about-us-header">Мы — маленькая, но гордая дизайн-студия из Краснодара. </p>
-		  				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+		  				<p class="about-us-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
 	  					<p class="list-header">Выполняем заказы на разработку:</p>
 	  					<ul class="about-us-list">
 	  						<li class="about-us-item">
@@ -175,11 +175,16 @@
 	  		<form class="about-us-form" method="post" action="https://echo.htmlacademy.ru">
 	  			<button class="modal-close" type="button">Закрыть</button>
 	  			<p class="form-header">Напишите нам</p>
-					<input id="user-name" type="text" name="name" placeholder="Ваше имя" ><label for="user-name">Ваше имя:</label>
-				</p>
-				<p>
-					<input id="user-mail" type="text" name="email" placeholder="Ваш e-mail:"><label for="user-mail">Ваш e-mail:</label>
-				</p>
+	  			<div class="user-name-wrapper">
+	  					<label for="user-name">Ваше имя:</label>
+						<input id="user-name" type="text" name="name" placeholder="Ваше имя" >
+					<p>
+					</p>
+					<p>
+						<label for="user-mail">Ваш e-mail:</label>
+						<input id="user-mail" type="text" name="email" placeholder="Ваш e-mail:">
+					</p>
+				</div>
 				<label for="write">Текст письма:</label>
 				<textarea id="write" placeholder="В свободной форме"></textarea>
 				<button class="button write-us-button" type="submit">Отправить</button>

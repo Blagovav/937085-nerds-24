@@ -11,7 +11,7 @@
   <header class="main-header">
     <nav class="main-navigation container">
       <a href="index.html" class="header-logo">
-        <img class="header-logo picture" src="img/nerds-logo.svg" name="Логотип Нердса" width="160" height="65">
+        <img class="header-logo picture" src="img/nerds-logo.svg" alt="Логотип Нердса" width="160" height="65">
       </a>
       <ul class="site-navigation">
         <li>
@@ -36,7 +36,6 @@
     <div class="header-wrapper">
       <h1 class="catalog-header">Магазин готовых шаблонов</h1>
     </div>  
-  </nav>
 </header>
 <main class="container">
   <div class="catalog-wrapper">
@@ -107,7 +106,7 @@
       <ul class="catalog-list">
         <li class="catalog-items">
             <article>
-              <img class="sedona-image" src="img/sedona.png" name="Седона" width="360" height="576">
+              <img class="sedona-image" src="img/sedona.png" alt="Седона" width="360" height="576">
               <div class="shop sedona-text">
                 <h2>SEDONA</h2>
                 <p>Информационный сайт для туристов</p>
@@ -117,7 +116,7 @@
           </li>
           <li class="catalog-items">
             <article>
-              <img class="plus-image" src="img/aplus.png" name="А плюс" width="360" height="576">
+              <img class="plus-image" src="img/aplus.png" alt="А плюс" width="360" height="576">
               <div class="shop plus-text">
                 <h2>A Plus</h2>
                 <p>Лендинг курсов повышения квалификации</p>
@@ -127,7 +126,7 @@
           </li>
           <li class="catalog-items">
             <article>
-              <img class="kvast-image" src="img/kvast.png" name="Кваст" width="360" height="576">
+              <img class="kvast-image" src="img/kvast.png" alt="Кваст" width="360" height="576">
               <div class="shop kvast-text">
                 <h2>КВАСТ</h2>
                 <p>Промо-сайт производителя крафтового кваса</p>
@@ -137,7 +136,7 @@
           </li>
           <li class="catalog-items">
             <article>
-              <img src="img/barber.png" name="Барбершоп" width="360" height="576">
+              <img src="img/barber.png" alt="Барбершоп" width="360" height="576">
               <div class="shop barber-text">
                 <h2>Barbershop</h2>
                 <p>Сайт салона красоты.Для мужчин, да.</p>
@@ -147,7 +146,7 @@
           </li>
           <li class="catalog-items">
             <article>
-              <img src="img/mishka.png" name="Мишка" width="360" height="576">
+              <img src="img/mishka.png" alt="Мишка" width="360" height="576">
               <div class="shop mishka-text">
                 <h2>MISHKA</h2>
                 <p>Интернет-магазин вязаных игрушек</p>
@@ -157,7 +156,7 @@
           </li>
           <li class="catalog-items">
             <article>
-              <img src="img/pink.png" name="Pink" width="360" height="576">
+              <img src="img/pink.png" alt="Pink" width="360" height="576">
               <div class="shop pink-text">
                 <h2>Pink App</h2>
                 <p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -167,23 +166,26 @@
           </li>
         </ul>
         <div class="paginator">
-          <a class="choose" href="#1">1</a>
-          <a href="#2">2</a>
-          <a href="#3">3</a>
-          <a href="#next">Следующая</a>
+          <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+            <li class="pagination-item"><a>2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#">Следующая</a></li>
+          </ul>
         </div>
       </section>
-    </main>
-      <footer class="main-footer ">
-        <div class="map-wrapper">
-          <img class="map-image" src="img/map.png" alt="Карта проезда" width="1440" height="416">
-          <section class="map container">
-            <div class="write-us">
-              <h3>NЁRDS DESIGN STUDIO</h3>
-              <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-              <a class="number-phone" href="tel:+78122757575">Тел:+78122757575</a>
-              <button class="button link-button" type="submit">Напишите нам</button>
-            </div>
+    </div>
+  </main>
+  <footer class="main-footer ">
+    <div class="map-wrapper">
+      <img class="map-image" src="img/map.png" alt="Карта проезда" width="1440" height="416">
+        <section class="map container">
+          <div class="write-us">
+            <h3>NЁRDS DESIGN STUDIO</h3>
+            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <a class="number-phone" href="tel:+78122757575">Тел:+78122757575</a>
+            <button class="button link-button" type="submit">Напишите нам</button>
+          </div>
         </section>
         </div>
         <div class="main-footer-wrapper container">
@@ -209,8 +211,6 @@
           <button class="modal-close" type="button">Закрыть</button>
           <p class="form-header">Напишите нам</p>
           <input id="user-name" type="text" name="name" placeholder="Ваше имя" ><label for="user-name">Ваше имя:</label>
-        </p>
-        <p>
           <input id="user-mail" type="text" name="email" placeholder="Ваш e-mail:"><label for="user-mail">Ваш e-mail:</label>
         </p>
         <label for="write">Текст письма:</label>

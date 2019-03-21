@@ -782,16 +782,8 @@ a {
   background-image: url(../img/checkbox-off.svg);
   opacity: 0.7;
 }
-.filter-options-checkbox:checked + label::after{
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top:0;
-  left:-35px;
-  background-repeat: no-repeat;
+.filter-options-checkbox:checked + label::before{
   background-image: url(../img/checkbox-on.svg);
-  opacity: 0.7;
 }
 .button-filter{
   background-color: #eeeeee;

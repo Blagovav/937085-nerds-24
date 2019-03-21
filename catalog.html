@@ -39,7 +39,7 @@
 </header>
 <main class="container">
   <div class="catalog-wrapper">
-          <section class="filter-wrapper">
+      <section class="filter-wrapper">
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-item">
             <legend>Стоимость:</legend>
@@ -60,16 +60,16 @@
           <fieldset class="filter-item">
             <legend>СЕТКА:</legend>
             <ul class="filter-options">
-              <li class="filter-option">
-                <input type="radio" class="filter-options-radio" name="adaptive"  id="adaptive" value="Адаптивная" checked>
+              <li class="filter-option-radio">
+                <input type="radio" class="visually-hidden filter-options-radio" name="adaptive"  id="adaptive" value="Адаптивная" checked>
                 <label for="adaptive">Адаптивная</label>
              </li>
-              <li class="filter-option">
-                <input type="radio" class="filter-options-radio" name="fixed"  id="fixed" value="Фиксированная">
+              <li class="filter-option-radio">
+                <input type="radio" class="visually-hidden filter-options-radio" name="fixed"  id="fixed" value="Фиксированная">
                 <label for="fixed">Фиксированная</label>
               </li>
-              <li class="filter-option">
-                <input type="radio" class="filter-options-radio" name="rubber" id="rubber" value="Резиновая">
+              <li class="filter-option-radio">
+                <input type="radio" class="visually-hidden filter-options-radio" name="rubber" id="rubber" value="Резиновая">
                 <label for="rubber">Резиновая</label>
               </li>
             </ul>
@@ -78,23 +78,23 @@
             <legend>ОСОБЕННОСТИ:</legend>
             <ul class="filter-options">
               <li class="filter-option">
-                <input type="checkbox" class="filter-options-checkbox" name="slayder" id="slayder">
+                <input type="checkbox" class="visually-hidden filter-options-checkbox" name="slayder" id="slayder">
                 <label for="slayder">Слайдер</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" class="filter-options-checkbox" name="block" id="block">
+                <input type="checkbox" class="visually-hidden filter-options-checkbox" name="block" id="block">
                 <label for="block">Блок преимуществ</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" class="filter-options-checkbox" name="news" id="news">
+                <input type="checkbox" class="visually-hidden filter-options-checkbox" name="news" id="news">
                 <label for="news">Новости</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" class="filter-options-checkbox" name="galery" id="galery">
+                <input type="checkbox" class="visually-hidden filter-options-checkbox" name="galery" id="galery">
                 <label for="galery">Галерея</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" class="filter-options-checkbox" name="bascet-box" id="bascet-box">
+                <input type="checkbox" class="visually-hidden filter-options-checkbox" name="bascet-box" id="bascet-box">
                 <label for="bascet-box">Корзина</label>
               </li>
             </ul>
@@ -210,29 +210,23 @@
         <form class="about-us-form" method="post" action="https://echo.htmlacademy.ru">
           <button class="modal-close" type="button">Закрыть</button>
           <p class="form-header">Напишите нам</p>
-          <input id="user-name" type="text" name="name" placeholder="Ваше имя" ><label for="user-name">Ваше имя:</label>
-          <input id="user-mail" type="text" name="email" placeholder="Ваш e-mail:"><label for="user-mail">Ваш e-mail:</label>
-        </p>
-        <label for="write">Текст письма:</label>
-        <textarea id="write" placeholder="В свободной форме"></textarea>
-        <button class="button write-us-button" type="submit">Отправить</button>
+          <div class="user-wrapper">
+            <div class="user-name-wrapper">
+              <label for="user-name">Ваше имя:</label>
+            <input id="user-name" type="text" name="name" placeholder="Имя Фамилия" >
+          </div>
+          <div class="mail-wrapeer">
+            <label for="user-mail">Ваш e-mail:</label>
+            <input id="user-mail" type="text" name="email" placeholder="Ваш e-mail:">
+          </div>
+        </div>
+        <div class="write-wrapper">
+          <label for="write">Текст письма:</label>
+          <textarea id="write" name="massege" placeholder="В свободной форме"></textarea>
+          <button class="button write-us-button" type="submit">Отправить</button>
+        </div>
       </form>
     </section>
-    <script>
-  var link = document.querySelector(".link-button");
-  
-  var popup = document.querySelector(".modal-write-us");
-  var close = popup.querySelector(".modal-close");
-  
-  link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("modal-show");
-  });
-  
-  close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-  });
-    </script>
+    <script src="js/script.js" type="text/javascript"></script>
   </body>
 </html>

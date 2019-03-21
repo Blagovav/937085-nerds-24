@@ -175,36 +175,23 @@
 	  		<form class="about-us-form" method="post" action="https://echo.htmlacademy.ru">
 	  			<button class="modal-close" type="button">Закрыть</button>
 	  			<p class="form-header">Напишите нам</p>
-	  			<div class="user-name-wrapper">
+	  			<div class="user-wrapper">
+	  				<div class="user-name-wrapper">
 	  					<label for="user-name">Ваше имя:</label>
-						<input id="user-name" type="text" name="name" placeholder="Ваше имя" >
-					<p>
-					</p>
-					<p>
+						<input id="user-name" type="text" name="name" placeholder="Имя Фамилия" >
+					</div>
+					<div class="mail-wrapeer">
 						<label for="user-mail">Ваш e-mail:</label>
 						<input id="user-mail" type="text" name="email" placeholder="Ваш e-mail:">
-					</p>
+					</div>
 				</div>
-				<label for="write">Текст письма:</label>
-				<textarea id="write" placeholder="В свободной форме"></textarea>
-				<button class="button write-us-button" type="submit">Отправить</button>
+				<div class="write-wrapper">
+					<label for="write">Текст письма:</label>
+					<textarea id="write" name="massege" placeholder="В свободной форме"></textarea>
+					<button class="button write-us-button" type="submit">Отправить</button>
+				</div>
 			</form>
 		</section>
-		<script>
-  var link = document.querySelector(".link-button");
-  
-  var popup = document.querySelector(".modal-write-us");
-  var close = popup.querySelector(".modal-close");
-  
-  link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("modal-show");
-  });
-  
-  close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-  });
-		</script>
+		<script src="js/script.js" type="text/javascript"></script>
 	</body>
 </html>

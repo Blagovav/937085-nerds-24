@@ -14,6 +14,7 @@ a {
 }
 /*стили для шапки*/
 .main-header{
+  padding-top: 50px;
   margin-bottom: 80px;
 }
 .main-navigation{
@@ -265,7 +266,7 @@ a {
 .products-wrapper{
 }
 .products{
-  margin-bottom: 162px;
+  margin-bottom: 80px;
 }
 .products-list{
   display:flex;
@@ -321,12 +322,15 @@ a {
 }
 .companies{
   margin-bottom: 80px;
+  border-top:2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 .companies-image{
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0;
 }
 .companies-item {
   background-repeat: no-repeat;
@@ -336,31 +340,11 @@ a {
   height: 100px;
   font-size:0;
   background-position: 50%;
+  align-items: center;
 }
 .companies-image li{
   position: relative;
-}
-.companies-image li:nth-child(1)::after{
-  content: "";
-
-  position: absolute;
-  top: -10px;
-  left: -40px;
-
-  width: 1160px;
-  height: 2px;
-  background-color: #eeeeee;
-}
-.companies-image li:nth-child(1)::before{
-  content: "";
-
-  position: absolute;
-  top:120px;
-  left: -40px;
-
-  width: 1160px;
-  height: 2px;
-  background-color: #eeeeee;
+  width: 25%;
 }
 .companies-image li:not(:first-child)::after{
   content: "";
@@ -432,6 +416,8 @@ a {
   display: flex;
   justify-content: space-between;
   margin-bottom: 74px;
+  border-top: 2px solid #eeeeee;
+  padding-top: 80px;
 }
 .about-us{
   width:650px;
@@ -454,17 +440,7 @@ a {
 .about-us-text{
   margin-bottom: 45px;
 }
-.about-us::after{
-  content: "";
 
-  position: absolute;
-  top: -80px;
-  left: 0;
-
-  width: 1160px;
-  height: 2px;
-  background-color: #eeeeee;
-}
 .list-header {
   font-weight: 700;
   text-transform: uppercase;
@@ -586,32 +562,44 @@ a {
   display:none;
   bottom: 0;
   left:0;
-}
-.catalog-items a{
-  margin-bottom: 80px;
+  text-align: center;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 43px;
+  box-sizing: border-box;
 
 }
+.button-catalog{
+  width: 200px;;
+}
+.catalog-items a{
+  width: 180px;
+  padding: 16px 10px;
+}
 .catalog-items p{
-  max-height: 50%;
-  overflow-y: scroll;
+  max-height: 379px;
+  overflow-y: auto;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
+  margin-bottom: 0;
+  padding-bottom: 30px;
 }
 .catalog-items article{
   position: relative;
   width: 360px;
+  padding-top:40px;
   text-align: center;
   margin-bottom: 73px;
 }
 .catalog-items article::before{
   content: "";
   position: absolute;
-  bottom: 39px;
+  top:0;
   left: 0;
   width: 100%;
-  height:100%;
+  height:40px;
   background-image: url("../img/browser.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -625,7 +613,11 @@ a {
   position: absolute;
   background-color: #eeeeee;
   width: 360px;
-
+}
+.shop h2{
+  margin: 0;
+  padding-top: 35px;
+  padding-bottom: 25px;
 }
 .plus-text{
   position: absolute;
@@ -749,16 +741,8 @@ a {
   background-image: url(../img/radio-off.svg);
   opacity: 0.7;
 }
-.filter-options-radio:checked + label::after{
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top:0;
-  left:-35px;
-  background-repeat: no-repeat;
+.filter-options-radio:checked + label::before{
   background-image: url(../img/radio-on.svg);
-  opacity: 0.7;
 }
 
 
@@ -920,17 +904,23 @@ a {
 /*стили формы*/
 .about-us-form p{
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 .modal{
   display: none;
-  width: 960px;
-  height: 590px;
+  width: 760px;
+  height: 431px;
   background-color:#ffffff;
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left:50%;
+  margin-top:-295px;
+  margin-left:-480px;
+  padding-left:100px;
+  padding-right:100px;
+  padding-top: 75px;
+  padding-bottom: 84px;
+
 }
 .modal-show {
   display: block;
@@ -940,34 +930,73 @@ a {
   0% {
     transform: translateY(-2000px);
   }
-  100% {
-    transform: translate(-50%, -50%);
+
+  70% {
+    transform: translateY(30px);
   }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+.user-wrapper{
+  display: flex;
+  margin-bottom: 36px;
+}
+.user-name-wrapper{
+  width: 100%;
+  margin-right: 40px;
+}
+.write-wrapper{
+  height: 195px;
+}
+.mail-wrapper{
+  width: 100%;
 }
 .about-us-form input[id="user-name"],
 .about-us-form input[id="user-mail"] {
   box-sizing: border-box;
   padding: 10px 15px;
   padding-right: 40px;
-  width: 360px;
+  width: 100%;
   height: 50px;
   border: 2px solid #d7dcde;
   background-color: #ffffff;
   opacity: 0.5;
   color: #444444;
-  margin-bottom: 36px;
+  margin-top: 12px;
 }
 .write-wrapper textarea[id="write"]{
-  width: 760px;
+  width: 100%;
   height: 118px;
   border: 2px solid #d7dcde;
   background-color: #ffffff;
   opacity: 0.5;
   color: #444444;
-  margin-bottom: 45px;
+  margin-top: 12px;
+  padding-top: 14px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+.modal label{
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  
 }
 .modal-write-us{
   position: fixed;
+}
+.form-header{
+  font-family: Roboto;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
 }
 .modal-close{
   position: absolute;
@@ -982,12 +1011,6 @@ a {
   background-color: #ffffff;
   cursor: pointer;
 }
-.form-header{
-  margin:0;
-  padding-top: 70px;
-  padding-left:100px;
-  margin-bottom: 50px;
-}
 .modal-close::before,
 .modal-close::after {
   content: "";
@@ -1001,7 +1024,6 @@ a {
 
   background-color: #feccce;
 }
-
 .modal-close::before {
   transform: rotate(45deg);
 }
@@ -1009,41 +1031,11 @@ a {
 .modal-close::after {
   transform: rotate(-45deg);
 }
-.write-us-buttom{
+.write-us-button{
   width: 260px;
   height: 50px;
-  color: #000000;
-}
-.form-header{
-  font-family: Roboto;
-  font-size: 45px;
-  font-weight: 500;
-  line-height: 45px;
-}
-.about-us-form label{
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 18px;
+  color: #ffffff;
+  margin-bottom: 84px;
 }
 
-.user-wrapper{
-  display: flex;
-  width: 820px;
-  margin-left: 100px;
-}
-.user-wrapper label{
-  padding-right: 60px;
-  margin-bottom: 12px;
-}
-.write-wrapper{
-  display: flex;
-  width: 820px;
-  margin-left: 100px;
-  justify-content: space-between;
-  flex-direction: column;
-}
-.write-wrapper label{
-  margin-bottom: 12px;
-}
 /**/

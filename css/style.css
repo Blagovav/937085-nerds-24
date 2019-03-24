@@ -270,10 +270,12 @@ a {
 }
 .products-list{
   display:flex;
-  justify-content: space-between;
 	list-style:none;
 	margin:0;
 	padding: 0;
+}
+.products-list li:not(:last-child){
+  margin-right: 100px;
 }
 .products-list h2{
   margin-top:0px;
@@ -290,7 +292,7 @@ a {
 }
 .products-item img{
   display:block;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 }
 .item-red{
   width: 300px;
@@ -469,8 +471,9 @@ a {
 .map-wrapper{
   position: relative;
   overflow: hidden;
-  height: 420px;
+  height: 350px;
   width:100%;
+  margin-bottom: 69px;
 }
 .map-image{
   position:absolute;
@@ -483,22 +486,26 @@ a {
 .main-footer-wrapper{
   display: flex;
   align-items: center;
+  padding-bottom: 69px;
 }
 .social-list{
   list-style: none;
   display: flex;
   flex-direction: row;
+  margin:0;
+  margin-right: 140px;
+  width: 260px;
+  padding:0;
+}
+.social-list li{
+  margin-right: 12px;
 }
 .social{
   display: inline-block;
   width:79px;
   height:79px;
   background-color:#e1e1e1;
-  margin-right:12px;
   border-radius:50%;
-}
-.footer-text{
-  margin-left:140px;
 }
 .social:hover,
 .social:focus{
@@ -952,7 +959,8 @@ a {
   margin-right: 40px;
 }
 .write-wrapper{
-  height: 195px;
+  height: 154px;
+  margin-bottom: 47px;
 }
 .mail-wrapper{
   width: 100%;
@@ -981,7 +989,9 @@ a {
   padding-top: 14px;
   padding-left: 15px;
   box-sizing: border-box;
-  margin-bottom: 37px;
+  padding-bottom:14px;
+  padding-right:15px;
+  resize: none;
 }
 .modal label{
   font-family: Roboto;

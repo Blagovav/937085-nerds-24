@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="css/normalize.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
@@ -27,18 +27,14 @@
           <a href="#">Контакты</a>
         </li>
       </ul>
-      <ul class="basket">
-        <li>
-          <a href="#">Корзина</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="header-wrapper">
-      <h1 class="catalog-header">Магазин готовых шаблонов</h1>
-    </div>  
+      <a class="basket" href="#">Корзина</a>
+    </nav>  
 </header>
-<main class="container">
-  <div class="catalog-wrapper">
+<main>
+  <div class="header-wrapper ">
+      <h1 class="catalog-header">Магазин готовых шаблонов</h1>
+  </div>
+  <div class="catalog-wrapper container">
       <section class="filter-wrapper">
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-item">
@@ -61,15 +57,15 @@
             <legend>СЕТКА:</legend>
             <ul class="filter-options">
               <li class="filter-option-radio">
-                <input type="radio" class="visually-hidden filter-options-radio" name="adaptive"  id="adaptive" value="Адаптивная" checked>
+                <input type="radio" class="visually-hidden filter-options-radio" name="filter-radio"  id="adaptive" value="Адаптивная" checked>
                 <label for="adaptive">Адаптивная</label>
              </li>
               <li class="filter-option-radio">
-                <input type="radio" class="visually-hidden filter-options-radio" name="fixed"  id="fixed" value="Фиксированная">
+                <input type="radio" class="visually-hidden filter-options-radio" name="filter-radio"  id="fixed" value="Фиксированная">
                 <label for="fixed">Фиксированная</label>
               </li>
               <li class="filter-option-radio">
-                <input type="radio" class="visually-hidden filter-options-radio" name="rubber" id="rubber" value="Резиновая">
+                <input type="radio" class="visually-hidden filter-options-radio" name="filter-radio" id="rubber" value="Резиновая">
                 <label for="rubber">Резиновая</label>
               </li>
             </ul>
@@ -100,9 +96,31 @@
             </ul>
           </fieldset>
         </form>
-        <input type="button" class="button button-filter" name="filter-button" value="Показать">
+        <input type="submit" class="button button-filter" name="filter-button" value="Показать">
       </section>
     <section class="catalog">
+      <div  class="filter-top">
+        <label>Сортировать:</label>
+        <ul class="filter-top-item">
+          <li>
+            <a href="#">по цене</a>
+          </li>
+          <li>
+            <a href="#">по типу</a>
+          </li>
+          <li>
+            <a href="#">по названию</a>
+          </li>
+        </ul>
+        <ul class="filter-up">
+          <li>
+            <a class="down" href="">Вниз</a>
+          </li>
+          <li>
+            <a class="up" href="">Вверх</a>
+          </li>
+        </ul>
+      </div>
       <ul class="catalog-list">
         <li class="catalog-items">
             <article>
@@ -170,8 +188,8 @@
             <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
             <li class="pagination-item"><a>2</a></li>
             <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-item"><a href="#">Следующая</a></li>
           </ul>
+          <a class="paginator-item paginator-button" href="#">Следующая</a>
         </div>
       </section>
     </div>

@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 	    <title>HTML Academy: Нёрдс</title>
-	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-	    <link rel="stylesheet" type="text/css" href="css/min.style.css">
-		<link href="css/normalize.css" rel="stylesheet">
+	    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+	    <link rel="stylesheet" href="css/normalize.css">
+	    <link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
 		<header class="main-header">
@@ -27,13 +27,11 @@
  						<a href="#">Контакты</a>
   					</li>
 	  			</ul>
-	  			<ul class="basket">
-	  				<li>
-	  					<a href="#">Корзина</a>
-	  				</li>
-	  			</ul>
-	  		</nav>
-			<section class="slider">
+	  			<a class="basket" href="#">Корзина</a>
+	  		</nav>		
+	  	</header>
+	  	<main>
+	  		<section class="slider">
 				<div class="container">
 					<h2 class="visually-hidden">Преимущества</h2>
 					<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
@@ -62,10 +60,8 @@
 						</li>
 					</ul>
 				</div>
-	  		</section>		
-	  	</header>
-	  	<main class="container">
-	  		<div class="products-wrapper">
+	  		</section>
+	  		<div class="products-wrapper container">
 	  			<section class="products">
 	  				<h1 class="visually-hidden">Нёрдс</h1>
 	  				<ul class="products-list">
@@ -107,7 +103,7 @@
 	 	 				</ul>
 	 	 			</section>
 	  				<section class="about-us-table">
-	  					<img src="img/nerds-illustration.png" alt="Нердс">
+	  					<img src="img/nerds-illustration.png" alt="Нердс" width="360" height="208">
 	  					<p>с 2004 года Любим точность во всем:</p>
 	  					<table class="table">
 		  					<tr>
@@ -182,7 +178,7 @@
 					</div>
 					<div class="mail-wrapper">
 						<label for="user-mail">Ваш e-mail:</label>
-						<input id="user-mail" type="text" name="email" placeholder="Ваш e-mail:" required>
+						<input id="user-mail" type="text" name="email" placeholder="Ваш e-mail:"required>
 					</div>
 				</div>
 				<div class="write-wrapper">

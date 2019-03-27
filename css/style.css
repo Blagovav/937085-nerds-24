@@ -361,7 +361,7 @@ a {
   background-color: #eab534;
 }
 .companies {
-  margin-bottom: 78px;
+  margin-bottom: 85px;
   border-top:2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
 }
@@ -377,7 +377,7 @@ a {
           justify-content: space-between;
   padding: 0;
   padding-top: 41px;
-  padding-bottom: 39px;
+  padding-bottom: 37px;
   margin: 0;
   padding-left: 30px;
   padding-right: 30px;
@@ -466,22 +466,28 @@ a {
   text-align: center;
 }
 .write-us h3 {
-  padding-top: 34px;
-  padding-right: 27px;
+  padding-top: 27px;
+  padding-right: 34px;
 }
 .write-us p {
+  margin-bottom: 17px;
+  padding-left: 46px;
+  padding-top: 6px;
+}
+.link-button {
+  margin-top: 40px;
+  margin-left: 49px;
+  width: 200px;
+  padding: 14px 7px;
+}
+.test{
   margin: 0;
-  padding-top: 8px;
-  width: 207px;
-  padding-left: 44px;
+  width: 250px;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-}
-.link-button {
-  margin-top: 37px;
-  margin-bottom: 30px;
+
 }
 .about-us-columns {
   display: -webkit-box;
@@ -490,7 +496,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 37px;
+  margin-bottom: 41px;
   border-top: 2px solid #eeeeee;
   padding-top: 45px;
 }
@@ -554,7 +560,7 @@ a {
   overflow: hidden;
   height: 418px;
   width:100%;
-  margin-bottom: 65px;
+  margin-bottom: 61px;
 }
 .map-image {
   position:absolute;
@@ -656,9 +662,10 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style: none;
+  margin-bottom: 32px;
 }
-.catalog-items li {
-  padding-bottom: 16px;
+.catalog-items {
+  padding-left: 5px;
 }
 .catalog-wrapper {
   display: -webkit-box;
@@ -667,6 +674,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 59px;
 }
 .catalog {
   -webkit-box-ordinal-group: 3;
@@ -702,8 +710,7 @@ a {
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-  margin-bottom: 0;
-  padding-bottom: 30px;
+  margin-bottom: 35px;
 }
 .catalog-items article {
   position: relative;
@@ -735,8 +742,8 @@ a {
 }
 .shop h2 {
   margin: 0;
-  padding-top: 35px;
-  padding-bottom: 25px;
+  padding-top: 31px;
+  padding-bottom: 0px;
 }
 .plus-text {
   position: absolute;
@@ -771,41 +778,40 @@ a {
 }
 /*стили для переключателя страниц*/
 .paginator {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  padding-left: 44px;
 }
 .paginator-button {
-      margin-right: 5px;
-    border-radius: 8px;
-    display: block;
-    padding: 10px 19px;
-    color: #ffffff;
-    background-color: #eeeeee;
-    margin-left: 10px;
+  margin-right: 5px;
+  border-radius: 8px;
+  display: block;
+  padding: 10px 19px;
+  color: #ffffff;
+  background-color: #eeeeee;
+  margin-left: 10px;
+  width: 225px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.paginator-button:hover,
+.paginator-button:focus{
+  background-color: #dfdfdf;
 }
 .pagination-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-left: 40px;
   list-style: none;
 }
 
 .pagination-item {
-  margin-right: 5px;
+  margin-right: 12px;
   border-radius: 13px;
-
-
 }
 
 .pagination-item:last-child {
-  margin-right: 0;  
+  margin-right: 0;
 }
 
 .pagination-item a {
@@ -1268,7 +1274,7 @@ a {
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
-  padding-left: 40px;
+  padding-left: 42px;
   text-transform: uppercase;
 }
 .filter-top-item {
@@ -1296,7 +1302,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 40px;
+  width: 50px;
   list-style: none;
 }
 .filter-up a {
@@ -1315,6 +1321,7 @@ a {
 .filter-up li {
   position: relative;
   width: 50%;
+  left: 12px;
 }
 .filter-top-item a:hover,
 .filter-top-item a:focus {
@@ -1338,7 +1345,7 @@ a {
   position: absolute;
   background-image: url(../img/icon-up-dir.svg);
 }
-.google{
+iframe{
+  width: 100%;
   position: relative;
-  z-index: 0;
 }

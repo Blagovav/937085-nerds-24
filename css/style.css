@@ -76,7 +76,10 @@ a {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-
+.basket:hover,
+.basket:focus{
+  color:#fb565a;
+}
 .header-logo {
   display:inline-block;
   margin-right: 100px;
@@ -98,9 +101,7 @@ a {
  opacity: 0.2;
 }
 .site-navigation a:hover,
-.site-navigation a:focus,
-.basket a:hover,
-.basket a:focus{
+.site-navigation a:focus{
   color:#fb565a;
 }
 .header-wrapper {
@@ -245,7 +246,9 @@ a {
   border: 2px solid #c1c1c1;
   border-radius: 50%;
 }
-
+.slider-controls label:active::after{
+  background: #fb565a;
+}
 .slider-item h3 {
   max-width: 600px;
   margin: 0;
@@ -558,7 +561,7 @@ a {
   top:50%;
   width: 100%;
   height: auto;
-  z-index: -2;
+  z-index: -1;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -1205,10 +1208,13 @@ a {
   font-weight: 500;
   line-height: 45px;
 }
+.about-us-form{
+  position: relative;
+}
 .modal-close {
   position: absolute;
-  top: 78px;
-  right: 90px;
+  top: 0;
+  right: 0;
   width: 22px;
   height: 22px;
 
@@ -1332,7 +1338,7 @@ a {
   position: absolute;
   background-image: url(../img/icon-up-dir.svg);
 }
-.yandex{
+.google{
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }

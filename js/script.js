@@ -1,5 +1,6 @@
   var link = document.querySelector(".link-button");
   var popup = document.querySelector(".modal-write-us");
+  var error = document.querySelector(".modal-er");
   var close = popup.querySelector(".modal-close");
   var userName = popup.querySelector("input[name='name']");
   var form = popup.querySelector(".about-us-form");

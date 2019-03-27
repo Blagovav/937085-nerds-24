@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/min.style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
@@ -53,7 +53,7 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="filter-item">
+          <fieldset class="filter-item grid">
             <legend>СЕТКА:</legend>
             <ul class="filter-options">
               <li class="filter-option-radio">
@@ -70,7 +70,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter-item">
+          <fieldset class="filter-item feature">
             <legend>ОСОБЕННОСТИ:</legend>
             <ul class="filter-options">
               <li class="filter-option">
@@ -94,9 +94,9 @@
                 <label for="bascet-box">Корзина</label>
               </li>
             </ul>
-          </fieldset>
-        </form>
+        </fieldset>
         <input type="submit" class="button button-filter" name="filter-button" value="Показать">
+       </form>
       </section>
     <section class="catalog">
       <div  class="filter-top">
@@ -202,7 +202,7 @@
             <h3>NЁRDS DESIGN STUDIO</h3>
             <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             <a class="number-phone" href="tel:+78122757575">Тел:+78122757575</a>
-            <button class="button link-button" type="submit">Напишите нам</button>
+            <button class="button link-button" type="button">Напишите нам</button>
           </div>
         </section>
         </div>
@@ -224,27 +224,27 @@
             </div>
           </div>
       </footer>
-      <section class="modal modal-write-us">
-        <form class="about-us-form" method="post" action="https://echo.htmlacademy.ru">
-          <button class="modal-close" type="button">Закрыть</button>
-          <p class="form-header">Напишите нам</p>
-          <div class="user-wrapper">
-            <div class="user-name-wrapper">
-              <label for="user-name">Ваше имя:</label>
-            <input id="user-name" type="text" name="name" placeholder="Имя Фамилия" >
-          </div>
-          <div class="mail-wrapper">
-            <label for="user-mail">Ваш e-mail:</label>
-            <input id="user-mail" type="text" name="email" placeholder="Ваш e-mail:">
-          </div>
-        </div>
-        <div class="write-wrapper">
-          <label for="write">Текст письма:</label>
-          <textarea id="write" name="massege" placeholder="В свободной форме"></textarea>
-          <button class="button write-us-button" type="submit">Отправить</button>
-        </div>
-      </form>
-    </section>
-    <script src="js/min.script.js" type="text/javascript"></script>
+	  <section class="modal modal-write-us">
+	  	<form class="about-us-form" method="post" action="https://echo.htmlacademy.ru">
+	  		<button class="modal-close" type="button">Закрыть</button>
+	  		<p class="form-header">Напишите нам</p>
+	  		<div class="user-wrapper">
+	  			<div class="user-name-wrapper">
+	  				<label for="user-name">Ваше имя:</label>
+					<input id="user-name" type="text" name="name" placeholder="Имя Фамилия" required="">
+				</div>
+				<div class="mail-wrapper">
+					<label for="user-mail">Ваш e-mail:</label>
+					<input id="user-mail" type="text" name="email" placeholder="Ваш e-mail:" required="">
+				</div>
+			</div>
+			<div class="write-wrapper">
+				<label for="write">Текст письма:</label>
+				<textarea id="write" name="massege" placeholder="В свободной форме"></textarea>
+			</div>
+			<button class="button write-us-button" type="submit">Отправить</button>
+		</form>
+	</section>
+	<script src="js/script.js"></script>
   </body>
 </html>

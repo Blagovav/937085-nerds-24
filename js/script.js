@@ -1,9 +1,9 @@
-  var link = document.querySelector(".link-button");  
+  var link = document.querySelector(".link-button");
   var popup = document.querySelector(".modal-write-us");
   var close = popup.querySelector(".modal-close");
-  var name = popup.querySelector("[name=name]");
-  var form = popup.querySelector("form")
-  var mail= popup.querySelector("[name=email]");
+  var userName = popup.querySelector("input[name='name']");
+  var form = popup.querySelector(".about-us-form");
+  var email = popup.querySelector("input[name='email']");
   var isStorageSupport = true;
   var storage = "";
   
@@ -13,29 +13,36 @@
     isStorageSupport = false;
   }
 
-   try {
-    storage = localStorage.getItem("name");
-  } catch (err) {
-    isStorageSupport = false;
-  }
-  
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal-show");
-    
     if (storage) {
-    name.value = storage;
-    mail.focus();
+      userName.value = storage;
+      email.focus();
     } else {
-    name.focus();
-  }
+      userName.focus();
+    }
   });
+
   close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("modal-show");
+  });
 
-    
-      window.addEventListener("keydown", function (evt) {
+  form.addEventListener("submit", function (evt) {
+    if (!userName.value || !email.value) {
+      evt.preventDefault();
+      form.classList.remove('modal-error');
+      void form.offsetWidth;
+      form.classList.add('modal-error');
+    } else {
+      if (isStorageSupport) {
+        localStorage.setItem("name", userName.value);
+      }
+    }
+  });
+
+  window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
       if (popup.classList.contains("modal-show")) {
@@ -43,14 +50,3 @@
       }
     }
   });
-  form.addEventListener("submit", function (evt) {
-      if (!name.value || !mail.value) {
-      evt.preventDefault();
-      console.log("Нужно ввести имя и e-mail");
-    } else {
-       if (isStorageSupport) {
-        localStorage.setItem("name", name.value);
-      };
-    }
-  });
-}); 
